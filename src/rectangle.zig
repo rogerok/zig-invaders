@@ -4,7 +4,7 @@ pub const Rectangle = struct {
     width: f32,
     height: f32,
 
-    pub fn intersects(self: Rectangle, other: Rectangle) bool {
+    pub inline fn intersects(self: Rectangle, other: Rectangle) bool {
         return self.x < other.x + other.width and
             self.x + self.width > other.x and
             self.y < other.y + other.height and
