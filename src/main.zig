@@ -147,7 +147,7 @@ pub fn main() void {
         }
     }
 
-    rl.initWindow(screen_width, screen_height, "ZOV Invaders. Fight for Slavyansk");
+    rl.initWindow(screen_width, screen_height, "Zig Invaders");
     defer rl.closeWindow();
 
     rl.setTargetFPS(60);
